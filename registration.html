@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body><table align="center">
+    <td>
+      <form action="regi.php" method="POST">
+        <fieldset>
+          <legend><b>Registration</b></legend>
+          <table>
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td><input name="name" type="text" required/></td>
+              </tr>
+            <tr>
+              <td>User Name</td>
+              <td>:</td>
+              <td><input name="uname" type="text" required/></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td>:</td>
+              <td><input type="password" name="password" required/></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>:</td>
+                <td><input type="password" name="cpassword" required/></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input name="email" type="text" required/></td>
+            </tr>
+            <tr>
+                <td>User Type</td>
+                <td>:</td>
+                <td>
+                    <select name="userType" required>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </td>
+            </tr>
+          </table>
+          <hr />
+          <input type="submit" name="submit" value="Submit" />
+          <a href="login.html">Login</a>
+        </fieldset>
+      </form>
+    </td>
+  </tr>
+</table></body>
+</html>
