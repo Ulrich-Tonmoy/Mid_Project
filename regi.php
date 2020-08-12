@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     if (empty($name) || empty($uname) || empty($password) || empty($cpassword) || empty($email) || empty($userType)) {
         echo "null submission found!";
     }
-    if (!preg_match("/^[A-Za-z]*$/", $name)) {
+    if (!preg_match("/^[A-Za-z]{4,}*$/", $name)) {
         echo "<span style='color:red;'>*Please enter a valid name</span>";
     }
     if (!preg_match("/^[A-Za-z0-9]*$/", $uname)) {
